@@ -1,0 +1,77 @@
+body {
+    background-image: url('https://img.freepik.com/premium-photo/blazing-fire-flame-background-and-textured_3236-499.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+}
+.table {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: gray;
+    border: 5px solid black;
+    max-width: 1300px;
+}
+.title-body {
+    margin-left: 42%;
+    font-size: 1.5rem;
+}
+.pizzy {
+    border: 2px solid black;
+    text-align: center;
+    width: 33.33333%;
+}
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    border: 3px solid black;
+    flex-direction: row;
+}
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+    padding: 0;
+    border: 3px solid black;
+    flex-direction: row;
+}
+.composition {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.composition .composition-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 2;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.composition:hover .composition-text {
+  visibility: visible;
+  opacity: 1;
+}
+.submit {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid orange;
+    background-color: orange;
+}
+.composition:hover {
+    color: red;
+}
